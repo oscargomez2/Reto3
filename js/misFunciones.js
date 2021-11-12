@@ -393,7 +393,7 @@ function registrarNuevo(modulo) {
             contentType: 'application/json',
             dataType: 'text',
             error: function (result) { alert('Error: Ver log para detalles.'); console.log(result); },
-            success: function () { alert('Mensaje Agregado.'); consultarMensaje(); }
+            success: function () { alert('Mensaje Agregado.'); consultarMensajes(); }
         });
     } else if (modulo === "Reservation") {
         $.ajax({
